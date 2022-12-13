@@ -7,6 +7,9 @@
         "php": ">=7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "doctrine/doctrine-bundle": "^2.7",
+        "doctrine/doctrine-migrations-bundle": "^3.2",
+        "doctrine/orm": "^2.13",
         "sensio/framework-extra-bundle": "^6.2",
         "symfony/asset": "5.4.*",
         "symfony/console": "5.4.*",
@@ -14,6 +17,7 @@
         "symfony/flex": "^1.17|^2",
         "symfony/form": "5.4.*",
         "symfony/framework-bundle": "5.4.*",
+        "symfony/mailer": "5.4.*",
         "symfony/mime": "5.4.*",
         "symfony/monolog-bundle": "^3.8",
         "symfony/runtime": "5.4.*",
@@ -69,7 +73,8 @@
     "extra": {
         "symfony": {
             "allow-contrib": true,
-            "require": "5.4.*"
+            "require": "5.4.*",
+            "docker": false
         }
     },
     "require-dev": {
