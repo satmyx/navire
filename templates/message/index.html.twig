@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Formulaire de contact
+{% endblock %}
+
+{% block body %}
+	{{ form_start(form)}}
+	<div class="container">
+    {{form_row(form.nom)}}
+    {{form_row(form.prenom)}}
+    {{form_row(form.mail)}}
+    {{form_row(form.message)}}
+    {{ form_widget(form.Envoyer, {"attr":{'class':'btn btn-success'}}) }}
+    </div>
+	{{ form_end(form)}}
+{% endblock %}
