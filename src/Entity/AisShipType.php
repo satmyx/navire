@@ -17,7 +17,7 @@ class AisShipType
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column]
+    #[ORM\Column(name: 'aisshiptype')]
     #[Assert\Range(
             min: 1,
             max: 9,
